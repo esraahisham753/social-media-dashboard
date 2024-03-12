@@ -4,6 +4,7 @@ h1,
 h2,
 h3 {
     margin-top: 0;
+    line-height: 1.1;
 }
 
 h1 {
@@ -12,8 +13,7 @@ h1 {
     }
 
     font-size: rem(24);
-    margin-bottom: 3px;
-    line-height: 1.1;
+    margin-bottom: rem(3);
 }
 
 a,
