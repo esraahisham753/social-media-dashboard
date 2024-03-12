@@ -19,6 +19,8 @@
     margin: 0 rem(-2);
     height: rem(24);
     width: rem(20);
+    z-index: 1;
+    position: relative;
   }
 
   &__background {
@@ -54,6 +56,10 @@
   #light:checked ~ .toggle__button {
     right: 3px;
     left: calc(100% - 21px);
+  }
+
+  #system:checked ~ .toggle__button {
+    
   }
 
   label {
