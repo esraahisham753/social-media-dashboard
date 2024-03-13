@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr rem(60) 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: rem(12);
+  gap: rem(4.8) rem(12);
 
   &__wrapper {
     height: rem(24);
@@ -21,6 +21,10 @@
     width: rem(20);
     z-index: 1;
     position: relative;
+
+    &:focus ~ .toggle__button {
+      border: 2px solid white;
+    }
   }
 
   &__background {
@@ -35,6 +39,7 @@
       var(--toggle-bg-gradient-start) 98.02%
     );
     border-radius: rem(12);
+    pointer-events: none;
   }
 
   &__button {
@@ -46,6 +51,7 @@
     left: rem(3);
     top: rem(3);
     right: 100%;
+    transition: all 0.2s ease-in-out;
   }
 
   #dark:checked ~ .toggle__button {
@@ -59,10 +65,15 @@
   }
 
   #system:checked ~ .toggle__button {
-    
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   label {
+    font-size: rem(14);
+    align-self: center;
+
     &[for="dark"] {
       grid-column: 1/2;
       justify-self: end;
@@ -77,6 +88,7 @@
       grid-column: 2/3;
       grid-row: 2/3;
       justify-self: center;
+      align-self: start;
     }
   }
 }
