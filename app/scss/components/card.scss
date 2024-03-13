@@ -1,5 +1,76 @@
 @use '../utils/' as *;
 
 .card {
-    padding: rem(20);
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+
+    &--facebook {
+
+    }
+
+    &--twitter {
+
+    }
+
+    &--instagram {
+
+    }
+
+    &--youtube {
+
+    }
+
+    &__platform {
+
+    }
+
+    &__icon {
+        &--facebook {
+
+        }
+
+        &--twitter {
+
+        }
+
+        &--instagram {
+
+        }
+
+        &--youtube {
+
+        }
+    }
+
+    &__username {
+
+    }
+
+    &__followers {
+        
+    }
+
+    &__count {
+        &--small {
+
+        }
+
+        &--big {
+
+        }
+    }
+
+    &__label {
+
+    }
+
+    &__change {
+        &--up {
+
+        }
+
+        &--down {
+
+        }
+    }
 }
