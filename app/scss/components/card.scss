@@ -1,26 +1,38 @@
 @use '../utils/' as *;
 
+.cards {
+    
+}
+
 .card {
     background-color: var(--dark-card-bg);
     color: var(--dark-text1);
     text-align: center;
     width: rem(255); //TEMP
     padding: rem(25);
+    border-radius: rem(5);
+    border-top: rem(5) solid;
 
     &--facebook {
-
+        border-color: var(--facebook);
     }
 
     &--twitter {
-
+        border-color: var(--twitter);
     }
 
     &--instagram {
-
+        border-color: transparent;
+        border-image: linear-gradient(
+            255deg,
+            var(--instagram-gradient-start) 0%,
+            var(--instagram-gradient-end) 98.02%
+        );
+        border-image-slice: 1;
     }
 
     &--youtube {
-
+        border-color: var(--youtube);
     }
 
     &__platform {
@@ -56,11 +68,14 @@
     }
 
     &__followers {
-        
+        margin-bottom: rem(28);
     }
 
     &__count {
         color: var(--dark-text2);
+        line-height: 1;
+        letter-spacing: rem(-2);
+        margin-bottom: rem(4);
 
         &--small {
 
@@ -73,16 +88,29 @@
     }
 
     &__label {
-
+        font-size: rem(12);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: rem(4);
     }
 
     &__change {
-        &--up {
+        font-size: rem(12);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        &--up {
+            color: var(--limegreen);
         }
 
         &--down {
-
+            color: var(--brightred);
         }
+    }
+
+    &__number {
+        margin-left: rem(4);
     }
 }
