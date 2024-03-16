@@ -21,6 +21,12 @@
   padding: rem(25);
   border-radius: rem(5);
   border-top: rem(5) solid;
+  transition: background 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--dark-card-hover);
+  }
 
   &--facebook {
     border-color: var(--facebook);
