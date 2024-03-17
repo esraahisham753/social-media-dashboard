@@ -33,6 +33,7 @@
   --card-hover: var(--light-card-hover);
   --toggle: var(--toggle-light);
   --toggle-bg: var(--toggle-bg-light);
+  --toggle-button-bg: var(--light-bg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,5 +49,32 @@
         var(--toggle-bg-gradient-end) 0%,
         var(--toggle-bg-gradient-start) 98.02%
       );
+    --toggle-button-bg: var(--dark-bg);
   }
+}
+
+body.light {
+  --background: var(--light-bg);
+  --text-color: var(--light-text2);
+  --text-sec-color: var(--light-text1);
+  --card-bg: var(--light-card-bg);
+  --card-hover: var(--light-card-hover);
+  --toggle: var(--toggle-light);
+  --toggle-bg: var(--toggle-bg-light);
+  --toggle-button-bg: var(--light-bg);
+}
+
+body.dark {
+    --background: var(--dark-bg);
+    --text-color: var(--dark-text2);
+    --text-sec-color: var(--dark-text1);
+    --card-bg: var(--dark-card-bg);
+    --card-hover: var(--dark-card-hover);
+    --toggle: var(--light-bg);
+    --toggle-bg: linear-gradient(
+        225deg,
+        var(--toggle-bg-gradient-end) 0%,
+        var(--toggle-bg-gradient-start) 98.02%
+      );
+    --toggle-button-bg: var(--dark-bg);
 }

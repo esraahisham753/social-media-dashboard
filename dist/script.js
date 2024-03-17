@@ -1,2 +1,2 @@
-"use strict";console.log("Hello World");
+"use strict";var toggleEl=document.getElementById("toggle"),darkRadio=document.getElementById("dark"),lightRadio=document.getElementById("light"),body=document.querySelector("body");toggleEl.addEventListener("click",(function(){body.classList=darkRadio.checked?"dark":"light"}));
 //# sourceMappingURL=script.js.map
