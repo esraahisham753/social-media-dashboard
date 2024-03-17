@@ -30,11 +30,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(
-      225deg,
-      var(--toggle-bg-gradient-end) 0%,
-      var(--toggle-bg-gradient-start) 98.02%
-    );
+    background: var(--toggle-bg);
     border-radius: rem(12);
     pointer-events: none;
   }
@@ -70,5 +66,7 @@
   label {
     font-size: rem(14);
     line-height: rem(24);
+    color: var(--toggle);
+    font-weight: bold;
   }
 }
